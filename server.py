@@ -173,10 +173,10 @@ def login(data: LoginData, db: Session = Depends(get_db)):
     }
 @app.get("/")
 def home():
-return {
-    "status": "online",
-    "mensagem": "API funcionando"
-}
+    return {
+        "status": "online",
+        "mensagem": "API funcionando"
+    }
 
 # ===== CHAT IA =====
 @app.post("/chat")
