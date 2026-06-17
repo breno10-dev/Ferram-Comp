@@ -1,4 +1,6 @@
 from fastapi import FastAPI, Depends, Header
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 
 
@@ -22,6 +24,7 @@ load_dotenv()
 #uvicorn server:app --reload
 # ===== APP =====
 app = FastAPI()
+app.mount("/static", StaticFiles(directory="projeto"), name="static")
 
 app.add_middleware(
     CORSMiddleware,
@@ -173,10 +176,7 @@ def login(data: LoginData, db: Session = Depends(get_db)):
     }
 @app.get("/")
 def home():
-    return {
-        "status": "online",
-        "mensagem": "API funcionando"
-    }
+    return FileResponse("projeto/index.html")
 
 # ===== CHAT IA =====
 @app.post("/chat")
