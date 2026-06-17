@@ -1,4 +1,4 @@
-const API = "http://127.0.0.1:8000"
+const API = "https://ferram-comp.onrender.com"
 
 let historico = []
 let token = localStorage.getItem("token")
