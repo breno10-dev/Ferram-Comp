@@ -173,6 +173,7 @@ def login(data: LoginData, db: Session = Depends(get_db)):
     }
 @app.get("/")
 def home():
+    return FileResponse("index.html")
     return {
         "status": "online",
         "mensagem": "API funcionando"
