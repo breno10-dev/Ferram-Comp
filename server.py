@@ -24,7 +24,7 @@ load_dotenv()
 #uvicorn server:app --reload
 # ===== APP =====
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="projeto"), name="static")
+app.mount("/static", StaticFiles(directory="projeto/frontend"), name="static")
 
 app.add_middleware(
     CORSMiddleware,
