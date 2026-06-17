@@ -117,18 +117,18 @@ function logout(){
 function setAvatar(state){
     const avatar = document.getElementById("avatar")
 
-    avatar.classList.remove("avatar-idle","avatar-thinking","avatar-speaking")
+    avatar.classList.remove("avatar-idle","avatar-thinking","avatar-")
 
     if(state === "idle"){
-        avatar.src = "imagens/idle.gif"
+        avatar.src = "/static/imagens/idle.gif"
     }
 
     if(state === "thinking"){
-        avatar.src = "imagens/thinking.gif"
+        avatar.src = "/static/imagens/thinking.gif"
     }
 
     if(state === "speaking"){
-        avatar.src = "imagens/speaking.gif"
+        avatar.src = "/static/imagens/speaking.gif"
     }
 }
 
@@ -211,7 +211,7 @@ function falar(texto){
 
     speechSynthesis.cancel()
 
-    setAvatar("speaking")
+    setAvatar("")
 
     const speech = new SpeechSynthesisUtterance(texto)  
 
