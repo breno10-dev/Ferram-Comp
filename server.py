@@ -176,7 +176,7 @@ def login(data: LoginData, db: Session = Depends(get_db)):
     }
 @app.get("/")
 def home():
-    return FileResponse("projeto/index.html")
+    return FileResponse("projeto/frontend/index.html")
 
 # ===== CHAT IA =====
 @app.post("/chat")
