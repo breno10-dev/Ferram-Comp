@@ -413,7 +413,10 @@ async function corrigirCodigo(){
     }
 }
 
+function abrirGuia(){
+    document.getElementById("guiaModal").style.display = "flex"
+}
 
-function abrirGuia() {
-    alert("teste")
+function fecharGuia(){
+    document.getElementById("guiaModal").style.display = "none"
 }
