@@ -206,8 +206,8 @@ body{
     margin:10px;
 
     white-space: pre-wrap;
+    word-wrap: break-word;
 }
-
 .user{
     background:#17233a;
 }
