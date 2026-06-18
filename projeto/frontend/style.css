@@ -204,6 +204,8 @@ body{
     padding:14px;
     border-radius:16px;
     margin:10px;
+
+    white-space: pre-wrap;
 }
 
 .user{
