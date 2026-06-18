@@ -414,25 +414,6 @@ async function corrigirCodigo(){
 }
 
 
-function abrirGuia(){
-
-    alert(`
-GUIA DO SISTEMA
-
-💬 Chat com IA
-📚 Lições de programação
-▶️ Compilar código C++
-🧠 Corrigir código
-🔊 Assistente com voz
-👤 Entrar sem login
-
-A Cinty ainda está em desenvolvimento.
-
-Algumas funcionalidades ainda não funcionam:
-
-• cin  
-• srand(time(0))  
-• algumas funções C++  
-• compilação avançada
-`)
+function abrirGuia() {
+    alert("teste")
 }
