@@ -138,6 +138,8 @@ body{
 
     background:#0f1724;
     border-bottom:1px solid #1c2d3d;
+
+    position:relative;   /* ADICIONA ISSO */
 }
 
 /* COMPILADOR */
@@ -271,15 +273,9 @@ button:hover{
 }
 
 #guiaBtn{
-    position:absolute;
-    top:15px;
-    right:15px;
+    margin-left:auto;   /* empurra pra direita */
 
     background:#081c15;
     border:1px solid #00ff88;
     color:#00ff88;
-
-    padding:10px 18px;
-    border-radius:10px;
-    cursor:pointer;
 }
