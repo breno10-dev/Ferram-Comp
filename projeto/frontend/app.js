@@ -412,7 +412,7 @@ async function corrigirCodigo(){
         corrigindoEmProgresso = false
     }
 }
-}
+
 
 function abrirGuia(){
 
@@ -426,7 +426,13 @@ GUIA DO SISTEMA
 🔊 Assistente com voz
 👤 Entrar sem login
 
-A Cinty esta em desemvolvimento ainda algumas funcionalidades n funcionam ainda, como cin, srand(time(0)),e funções.
-    `)
+A Cinty ainda está em desenvolvimento.
 
+Algumas funcionalidades ainda não funcionam:
+
+• cin  
+• srand(time(0))  
+• algumas funções C++  
+• compilação avançada
+`)
 }
