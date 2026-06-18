@@ -117,7 +117,7 @@ function logout(){
 function setAvatar(state){
     const avatar = document.getElementById("avatar")
 
-    avatar.classList.remove("avatar-idle","avatar-thinking","avatar-")
+    avatar.classList.remove("avatar-idle","avatar-thinking","avatar-speaking")
 
     if(state === "idle"){
         avatar.src = "/static/imagens/idle.gif"
@@ -211,7 +211,7 @@ function falar(texto){
 
     speechSynthesis.cancel()
 
-    setAvatar("")
+    setAvatar("speaking")
 
     const speech = new SpeechSynthesisUtterance(texto)  
 
